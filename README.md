@@ -7,13 +7,13 @@ Use this on registration forms and when users try to change passwords. The funct
 
 ## How to include in a project
 
-just input ``include_once($path_to_pwnedChecker.php)`` at the top of the php file where users type their passwords.
+jJst put ``include_once($path_to_pwnedChecker.php)`` at the top of the php file where users type their passwords or on POST reciever php file.
 You might use it like this:
 ````
 if(isLeaked($password) > 0){
 // do not accept password
+return; // or something
 }
-
 // continue with registration or with password change...
 ````
 ## Example
