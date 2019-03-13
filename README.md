@@ -1,8 +1,9 @@
 # isLeaked
 
+This is function to check if a password has been leaked before users register with it on a web site. This project was inspired by [this video](https://www.youtube.com/watch?v=hhUb5iknVJs&t=418s). Feel free to change the code and use it how you like. 
+
 ## Usage
-This is a quick script to check if a password has been compromized before users register on a web site. This project was inspired by [this video](https://www.youtube.com/watch?v=hhUb5iknVJs&t=418s)
-it returns the number of times that password has been leaked. Feel free to change the code and use it how you like.
+Use this on registration forms and when users try to change passwords. The function returns -1 on any error, and a number representing how many times the password has been leaked. The function takes in the password in plaintext.
 
 ## How to include in a project
 
@@ -14,6 +15,13 @@ if(isLeaked($password) > 0){
 }
 
 // continue with registration or with password change...
-
-
 ````
+## Example
+
+Example code is in example directory
+
+## How to run
+
+### Windows
+
+install php server like [XAMMP](https://www.apachefriends.org/index.html). You might need to install [CURL](https://curl.haxx.se/windows/) as well. Not sure
