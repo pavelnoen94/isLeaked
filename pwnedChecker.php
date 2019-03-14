@@ -61,10 +61,6 @@ function isLeaked($password){
   return 0; // password has never been leaked
 }
 
-$password = "correcthorsebatterystaple";
-print(isLeaked($password));
-
-
 
  ?>
 
